@@ -66,8 +66,9 @@ extern "C" {
 #endif
 
 
-/* Inline assembler like this works only with GNU C and clang.  */
-#if (defined __i386__ || defined __x86_64__) && (defined __GNUC__ || defined __clang__)
+/* Inline assembler like this works only with GNU C and clang on x86.
+   ARM64EC and other architectures don't have x87 FPU control.  */
+#if (defined __i386__ || defined __x86_64__) && (defined __GNUC__ || defined __clang__) && !defined(__aarch64__) && !defined(__arm64__) && !defined(_M_ARM64) && !defined(_M_ARM64EC)
 
 typedef unsigned short fpucw_t; /* glibc calls this fpu_control_t */
 
