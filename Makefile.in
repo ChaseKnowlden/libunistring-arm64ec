@@ -2359,7 +2359,7 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 AUTOMAKE_OPTIONS = 1.5 gnu no-dependencies
 ACLOCAL_AMFLAGS = -I m4 -I gnulib-m4
-SUBDIRS = doc gnulib-local lib tests install-tests
+SUBDIRS = gnulib-local lib
 
 # Allow users to use "gnulib-tool --update".
 

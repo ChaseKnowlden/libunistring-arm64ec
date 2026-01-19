@@ -44,6 +44,7 @@ while :; do
     *) break ;;
   esac
 done
+skip_gnulib=true
 
 TEXINFO_VERSION=6.5
 

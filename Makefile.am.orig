@@ -19,7 +19,7 @@
 AUTOMAKE_OPTIONS = 1.5 gnu no-dependencies
 ACLOCAL_AMFLAGS = -I m4 -I gnulib-m4
 
-SUBDIRS = gnulib-local lib
+SUBDIRS = doc gnulib-local lib tests install-tests
 
 EXTRA_DIST = \
   version.sh BUGS DEPENDENCIES INSTALL.generic HACKING JOIN-GNU \
